@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="com.piv.example"
+        version="0.0.1">
+
+  <name>example</name>
+
+  <engines>
+    <engine name="cordova" version=">=3.4.0"/>
+  </engines>
+
+  <js-module src="www/pluginJS.js" name="pluginExample">
+    <clobbers target="pluginPiv"/>
+  </js-module>
+
+  <platform name="android">
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="example">
+        <param name="android-package" value="com.piv.example.pluginExample"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/pluginExample.java" target-dir="src/com/piv/example" />
+
+  </platform>
+
+</plugin>
