@@ -1,5 +1,4 @@
 package com.piv.example;
-
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.*;
 import org.json.JSONArray;
